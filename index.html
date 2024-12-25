@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACES-ACM</title>
+    <link rel="icon" href="image/logo-nobg.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- carousel -->
+    <header>
+        <nav>
+            <img src="image/logo_bg.jpg" alt="Logo" class="w-10 md:w-12">
+            <a href="#home" class="scroll-link">Home</a>
+            <a href="#team" class="scroll-link">Team</a>
+            <a href="#events" class="scroll-link">Events</a>
+            <a href="#contact" class="scroll-link">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="image/frosh-bg.jpg">
+                    <div class="content">
+                        <div class="author">ACES-ACM</div>
+                        <div class="title">FROSH</div>
+                        <div class="topic">2024</div>
+                        <div class="des">
+                            ACES-ACM welcomed CSE freshers with valuable tech insights and guidance, helping them kickstart their IIT Delhi journey and build connections in the CS community.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/tryst-bg.JPG">
+                    <div class="content">
+                        <div class="author">ACES-ACM</div>
+                        <div class="title">TRYST</div>
+                        <div class="topic">2024</div>
+                        <div class="des">
+                            ACES-ACM successfully conducted its flagship competitions at Tryst 2024, in IIT Delhi, witnessing a massive participation of over 1000 students across the country.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/jane-bg.jpg">
+                    <div class="content">
+                        <div class="author">ACES-ACM</div>
+                        <div class="title">JANE STREET</div>
+                        <div class="topic">ESTIMATHON</div>
+                        <div class="des">
+                            Students tackled the exciting 'Estimathon,' blending numbers, math, and quick thinking! Jane Street professionals shared insights into finance, with a live Q&A offering valuable industry perspectives.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/foss-bg.jpg">
+                    <div class="content">
+                        <div class="author">ACES-ACM</div>
+                        <div class="title">Delhi</div>
+                        <div class="topic">FOSS 2.0</div>
+                        <div class="des">
+                            DelhiFOSS 2.0 celebrated open-source innovation with engaging sessions, networking, and community-driven insights. Organized with @fossuniteddelhi, it showcased the power of collaboration and technology.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="image/frosh-thumbnail.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Frosh 2024
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/tryst-thumbnail.JPG">
+                    <div class="content">
+                        <div class="title">
+                            Tryst 2024
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/jane-thumbnail.jpg">
+                    <div class="content">
+                        <div class="title" style="line-height: 1.2">
+                            <i>Jane Street</i> Estimathon
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/foss-thumbnail.jpg">
+                    <div class="content">
+                        <div class="title" style="line-height: 1.2">
+                            DelhiFOSS 2.0
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+                <div class="autton">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flex flex-col md:flex-row introduction">
+                <div class="about w-full md:basis-1/3 mobile-margin-adjust">
+                    <div class="text-5xl pt-5 ps-32 md:ps-32 text-center">
+                        <img src="image/logo.png" class="w-28 md:w-60 slide-in">
+                    </div>
+                </div>
+                <div class="about-2 w-full basis-2/3 p-10 px-15 mobile-margin-adjust">
+                    <div class="typing text-xs md:text-2xl text-center">
+                        <span class="text first-text" style="font-family: monospace;"> We are </span>
+                        <span class="text second-text" style="font-family: monospace;"></span>
+                    </div>
+                    <script>
+                        const text = document.querySelector(".second-text")
+                        const textLoad = () => {
+                            setTimeout(() => {
+                                text.textContent = "ACES-ACM_"
+                            }, 0);
+                            setTimeout(() => {
+                                text.textContent = "official ACM Student Chapter of IITD_"
+                            }, 4000);
+                            setTimeout(() => {
+                                text.textContent = "the CSE Departmental Society of IITD_"
+                            }, 8000);
+                        }
+                        textLoad();
+                        setInterval(textLoad, 12000);
+                    </script>
+                    <p class="py-2 text-xs md:text-base slide-in-opp" style="color: rgb(3, 56, 56);"><span class="text-xl md:text-3xl">A</span>CES-ACM, the official ACM student 
+                        chapter of IIT Delhi and winner of the Best Departmental Society Award (AY 2023-24), caters to all facets of a 
+                        CS enthusiast's life. From all-night coding marathons to gaming tournaments, we organize a diverse range of events. 
+                        Our technical highlights include Digital Enigma, Code Hunt, Lingo-De-Tryst, hackathons, and sponsored competitions 
+                        like the Jane Street Estimathon, Tower Research Challenge, and Delhi FOSS 2.0. On the fun side, we host the 
+                        Departmental Trek, Freshers' Party, gaming tournaments, and more. Informative events such as FROSH, Intern ke Fundae, 
+                        and Research ke Fundae ensure holistic growth for the student community. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row introduction" style="background-color:  #024353;">
+                <div class="w-full md:basis-1/3 jump">
+                    <p class="py-2 px-4 md:text-xl border-l-4 m-3" style="font-weight: bold; font-family: monospace;">ABOUT IIT DELHI</p>
+                    <span class="line"></span>
+                        <p class="py-5 px-5 text-xs md:text-base text-cyan-100 italic">
+                            Indian Institute of Technology Delhi is one of the 23 IITs created to be 
+                            Centres of Excellence for training, research and development in science, engineering and technology 
+                            in India.
+                        </p>
+                </div>
+                <div class="w-full md:basis-1/3 jump">
+                    <p class="py-2 px-4 md:text-xl border-l-4 m-3" style="font-weight: bold; font-family: monospace;">ABOUT ACM</p>
+                        <p class="py-5 px-4 text-xs md:text-base text-cyan-100 italic">
+                            ACM, the world's largest educational and scientific computing society, delivers resources that advance computing 
+                            as a science and a profession. ACM provides the computing field's premier Digital Library and serves its members 
+                            and the computing profession with leading-edge publications, conferences, and career resources.
+                        </p>
+                </div>
+                <div class="w-full md:basis-1/3 jump">
+                    <p class="py-2 px-4 md:text-xl border-l-4 m-3" style="font-weight: bold; font-family: monospace;">OUR PURPOSE</p>
+                        <p class="py-5 px-4 text-xs md:text-base text-cyan-100 italic">
+                            We host a blend of events, from coding challenges, hackathons, and industry-sponsored competitions to gaming tournaments and 
+                            social gatherings. Our initiatives ensure learning and growth. With a balance of fun and skill-building, we inspire 
+                            innovation and camaraderie in the student community.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="min-h-screen bg-blue-50">
+        <div class="gradient-text px-16 py-10">
+            <blockquote class="text-2xl md:text-5xl border-l-4 pl-4">OUR TEAM</blockquote>
+        </div>
+        <!-- ctm -->
+        <div class="container swiper">
+            <div class="text-stone-500 text-center text-xl italic">Core Team Members</div>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/sanya-mittal-b2866b179/" class="card-link">
+                            <img src="ctm/Sanya.jpeg" class="card-image ">
+                            <p class="badge text-black pt-2 text-center">Sanya Mittal</p>
+                            <p class="badge text-red-400 pb-2 text-center">Overall Chairperson</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/utkarsh-singh-a70b94225/" class="card-link">
+                            <img src="ctm/Utkarsh.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Utkarsh Singh</p>
+                            <p class="badge text-red-400 pb-2 text-center">Vice-Chairperson</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/sakshi-gupta-8a0513228/" class="card-link">
+                            <img src="ctm/Sakshi.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Sakshi Gupta</p>
+                            <p class="badge text-red-400 pb-2 text-center">Treasurer</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/kavya-chopra-619776223/" class="card-link">
+                            <img src="ctm/Kavya.jpeg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Kavya Chopra</p>
+                            <p class="badge text-red-400 pb-2 text-center">Panel Member</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/kushagra02/" class="card-link">
+                            <img src="ctm/Kushagra.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Kushagra Gupta</p>
+                            <p class="badge text-red-400 pb-2 text-center">Panel Member</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="ctm/Rishi.jpeg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Rishi Chandra</p>
+                            <p class="badge text-red-400 pb-2 text-center">Panel Member</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- coordinators -->
+        <div class="container swiper">
+            <div class="text-stone-500 text-center text-xl italic pt-3">Coordinators</div>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/vishakha-agarwal07/" class="card-link-2">
+                            <img src="coordi/Vishakha.JPG" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Vishakha Agarwal</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/jahnabi-roy-828529275/" class="card-link-2">
+                            <img src="coordi/Jahnabi_Roy.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Jahnabi Roy</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/purushottam-sharma-a7a4b6217/" class="card-link-2">
+                            <img src="coordi/Puru.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Purushottam Sharma</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/akshatjha/" class="card-link-2">
+                            <img src="coordi/Akshat.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Akshat Jha</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link-2">
+                            <img src="coordi/Arnav.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Arnav Jain</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/anuj-chandak-b30522252/" class="card-link-2">
+                            <img src="coordi/Anuj.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Anuj Chandak</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/girvar-patidar-46721a253/" class="card-link-2">
+                            <img src="coordi/Girvar.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Girvar Patidar</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/toshi-pahadia-331170255/" class="card-link-2">
+                            <img src="coordi/Toshi.jpg" class="card-image-2">
+                            <p class="badge text-black pt-2 text-center">Toshi Pahadia</p>
+                            <p class="badge text-red-400 pb-2 text-center">Coordinator</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- executives -->
+        <div class="container swiper">
+            <div class="text-stone-500 text-center text-xl italic pt-3">Executives</div>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/himanshibhandari15/" class="card-link">
+                            <img src="team_photos/Himanshi.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Himanshi Bhandari</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/anoop-singh-4395b8290/" class="card-link">
+                            <img src="team_photos/Anoop.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Anoop Singh</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/aadi-govil-b5885a286/" class="card-link">
+                            <img src="team_photos/Aadi.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Aadi Govil</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/samarth-patel-612157211/" class="card-link">
+                            <img src="team_photos/Samarth.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Samarth Patel</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/akhilesh-agrawal-5a9539283/" class="card-link">
+                            <img src="team_photos/Akhilesh.jpeg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Akhilesh Agarwal</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/arinjay-singhal-976024289/" class="card-link">
+                            <img src="team_photos/Arinjay.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Arinjay Singhal</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/vani-gupta-iitd/" class="card-link">
+                            <img src="team_photos/Vani.jpeg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Vani Gupta</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/reeshabh-kotecha-a4a147212/" class="card-link">
+                            <img src="team_photos/Reeshabh.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Reeshabh Kotecha</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/pallavkamad/" class="card-link">
+                            <img src="team_photos/Pallav.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Pallav Kamad</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/priyanshi-gupta-118929283/" class="card-link">
+                            <img src="team_photos/Priyanshi .jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Priyanshi Gupta</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/samyak-sanghvi-519221282/" class="card-link">
+                            <img src="team_photos/Samyak.jpeg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Samyak Singhvi</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="https://www.linkedin.com/in/mannat-garg-266139300/" class="card-link">
+                            <img src="team_photos/Mannat.jpg" class="card-image">
+                            <p class="badge text-black pt-2 text-center">Mannat Garg</p>
+                            <p class="badge text-red-400 pb-2 text-center">Executive</p>
+                            <p class="badge text-blue-500 pb-2 text-center"><i class="fa fa-linkedin-square" style="font-size:24px"></i></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Events Section -->
+
+    <section id="events" class="min-h-screen bg-red-50">
+        <div class="gradient-text-2 px-16 py-10">
+            <blockquote class="text-2xl md:text-5xl border-l-4 pl-4">EVENTS CORNER</blockquote>
+        </div>
+        <div class="timeline text-black h-full pb-3">
+            <div class="info">
+                <div class="text-2xl font-bold">Events History</div>
+                <p class="text-red-700">
+                    An exciting lineup of events organized by ACES-ACM in 2024, designed to engage, educate, and empower students in the fields of technology, 
+                    coding, and innovation! These events brought together enthusiasts, professionals, and experts, creating opportunities 
+                    for learning, networking, and showcasing skills.
+                </p>
+            </div>
+            
+            <ol>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>Department Trek</time> 
+                    <p class="text-sm">25th-30th November 2024</p>
+                    <p class="text-xs pt-2">
+                        The Kuari Pass trek combined scenic trails, fresh air, and memorable moments with the CS family. A perfect blend of adventure and camaraderie!
+                    </p>
+                    <a href="https://www.instagram.com/p/DD2FZJBz1_g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5 pt-5" style="font-size:24px"></i></a> 
+                </div>              
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>BGMI Gaming Tournament</time>
+                    <p class="text-sm">27th October 2024</p>
+                    <p class="text-xs pt-2">
+                        Our BGMI tournament was a hit, with epic plays and intense competition! Congrats to the winners and thanks to all participants for making it unforgettable.
+                    </p>
+                    <a href="https://www.instagram.com/p/DB8nEd5ziJK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>PG FROSH : PG Freshers Orientation</time>
+                    <p class="text-sm">18th October 2024</p>
+                    <p class="text-xs pt-2">
+                        Organized by ACES ACM, this event connects PG Freshers and introduces them to the vibrant CS community of ACES-ACM and CAIC.
+                    </p>
+                    <a href="https://www.instagram.com/p/DBMLo0qoGVa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-2" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>Freshers 2024</time>
+                    <p class="text-sm">27th September 2024</p>
+                    <p class="text-xs pt-2">
+                        Freshers' Party 2024 was a success, thanks to you, Freshers! We, at ACES-ACM hope you had an amazing time and created great memories! ❤
+                    </p>
+                    <a href="https://www.instagram.com/p/DAqNDYnTaJB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>FROSH : Freshers Orientation</time>
+                    <p class="text-sm">3rd September 2024</p>
+                    <p class="text-xs pt-2">
+                        ACES-ACM welcomed CSE freshers, offering tech insights and fostering new friendships to kickstart their IIT Delhi journey.
+                    </p>
+                    <a href="https://www.instagram.com/p/C_vp5wMI45j/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+
+                </div>
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>Intern ke Fundae : 2nd-3rd year</time>
+                    <p class="text-sm">28th August 2024</p>
+                    <p class="text-xs pt-2">
+                        ACES-ACM IITD gathered 2nd and 3rd-year students to share valuable internship insights, covering everything from research roles to corporate opportunities.
+                    </p>
+                    <a href="https://www.instagram.com/p/C_c5pFZIpJq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Intern ke Fundae : 3rd-4th year</time>
+                <p class="text-sm">23rd June 2024</p>
+                <p class="text-xs pt-2">
+                    An info session by seniors to demystify internships and guide towards a successful career, equipping you with the skills and confidence to excel in the competitive landscape.
+                </p>
+                <a href="https://www.instagram.com/p/C8c0fGrSLHO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-2" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+                
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Farewell Dinner</time>
+                <p class="text-sm">5th May 2024</p>
+                <p class="text-xs pt-2">
+                    We invite the Graduating Batch of 2024 to join us for a memorable Farewell Dinner to celebrate the journey we've shared together.
+                </p>
+                <a href="https://www.instagram.com/p/C6jWz5JS7bu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Games Galore</time>
+                <p class="text-sm">14th April 2024</p>
+                <p class="text-xs pt-2">
+                    The offline gaming event organised for cse students and professors having exciting and thrilling games like Dodgeball, Pithoo, Kho-Kho, Basketball and Futsal tournament.
+                </p>
+                <a href="https://www.instagram.com/p/C5vVVbzyFFE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-2" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Lingo-De-Tryst</time>
+                <p class="text-sm">31st March 2024</p>
+                <p class="text-xs pt-2"> Language puzzle solving contest. All you'll have to do is analyze given sentences and unravel the mysteries hidden in them.</p>
+                <a href="https://www.instagram.com/p/C49yr-nL3J5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+                
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Code Hunt</time>
+                <p class="text-sm">30st March 2024</p>
+                <p class="text-xs pt-2">
+                    A challenging journey through code and logic, where each task unlocks new opportunities to test and showcase your skills in computer science.
+                </p>
+                <a href="https://www.instagram.com/p/C5BFjTRoqCg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Digital Enigma</time>
+                <p class="text-sm">30st March 2024</p>
+                <p class="text-xs pt-2">
+                    An exciting event to test your technical and problem-solving skills across three intense rounds, designed to push your abilities to new heights.
+                </p>
+                <a href="https://www.instagram.com/p/C4iJtY0yQy2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Hack-4-Purpose</time>
+                <p class="text-sm">30st March 2024</p>
+                <p class="text-xs pt-2">Unleash your coding skills for the greater good at Hack-4-Purpose, a coding Hackathon bought to you by Tryst!</p>
+                <a href="https://www.instagram.com/p/C4pOlhqIu_O/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>Treasure Hunt</time>
+                    <p class="text-sm">17th March 2024</p>
+                    <p class="text-xs pt-2">
+                        ACES-ACM's Treasure Hunt was a blast! Participants solved clues and unlocked treasures across campus, making it an unforgettable adventure!
+                    </p>
+                    <a href="https://www.instagram.com/p/C4qYqYzM-BD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </li>
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>DelhiFOSS 2.0</time>
+                    <p class="text-sm">9th March 2024</p>
+                    <p class="text-xs pt-2">
+                        DelhiFOSS 2.0 brought insightful sessions, networking, and open-source excitement, thanks to @fossuniteddelhi. A celebration of community and innovation!
+                    </p>
+                    <a href=" https://www.instagram.com/p/C4aBzUgoL7u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== "><i class="fa fa-instagram pt-2" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                <time>Exploring Higher Studies</time>
+                <p class="text-sm">7th March 2024</p>
+                <p class="text-xs pt-2">
+                    A fireside chat and AMA session with our favourite professors where we discover insider tips, invaluable advice, and firsthand experiences as our professors delve into the world of higher education.
+                </p>
+                <a href="https://www.instagram.com/p/C4FBRpnowzo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-2" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div class="flex flex-col justify-between h-full">
+                    <time>Estimathon : A Jane street event</time>
+                    <p class="text-sm">6th March 2024</p>
+                    <p class="text-xs pt-2"> 
+                        Students tackled the exciting 'Estimathon,' blending numbers, math, and quick thinking! Jane Street professionals shared insights into finance, with a lively Q&A offering valuable industry perspectives.
+                    </p>
+                    <a href=" https://www.instagram.com/p/C4VhSrhMuRq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-1" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                <div>
+                    <time>AI research ke Fundae</time>
+                    <p class="text-sm">7th February 2024</p>
+                    <p class="text-xs pt-2">
+                        This session brought together experts and enthusiasts to explore the latest in AI/ML, featuring a dynamic Q&A for deeper insights.
+                    </p>
+                    <a href="https://www.instagram.com/p/C4BDt72ht73/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram pt-5" style="font-size:24px"></i></a> 
+                </div>
+                </li>
+
+                <li>
+                    
+                </li>
+            </ol>
+        </div>
+        </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-cyan-950">
+        <div class="bg-cyan-950">
+            <!-- Header Section -->
+            <div class="p-3 text-center text-white" style="font-family: larger;">
+                <h2 class="text-white text-3xl font-bold" style="text-shadow: 0px 0px 2px #fff;">CONTACT US</h2>
+            </div>
+        
+            <div class="flex flex-wrap justify-between">
+                <!-- Form Section -->
+                <form id="form" class="w-full sm:w-1/2 md:w-1/3 p-5 mx-auto">
+                    <h5 class="text-center text-white text-lg mb-4">Leave a Message!</h5>
+                    <label class="block text-white/70">NAME</label>
+                    <input type="text" placeholder="Name" 
+                           class="mt-1 mb-4 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        
+                    <label class="block text-white/70">E-MAIL ADDRESS</label>
+                    <input type="email" placeholder="Email Address" 
+                           class="mt-1 mb-4 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        
+                    <label class="block text-white/70">YOUR MESSAGE</label>
+                    <textarea placeholder="Your Message" 
+                              class="mt-1 mb-4 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        
+                    <button type="submit" 
+                            class="w-full p-3 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+                        SEND
+                    </button>
+                </form>
+        
+                <!-- Contact Info Section -->
+                <div class="w-full sm:w-1/2 md:w-2/5 px-4">
+                    <!-- Address Section -->
+                    <div class="flex items-start mb-4">
+                        <i class="bi bi-geo-alt text-white text-2xl mr-4"></i>
+                        <p class="text-white italic">IIT Campus, Indian Institute of Technology Delhi, Hauz Khas, New Delhi, Delhi 110016</p>
+                    </div>
+        
+                    <!-- Email Section -->
+                    <div class="flex items-start mb-4">
+                        <i class="bi bi-envelope text-white text-2xl mr-4"></i>
+                        <a href="mailto:acesacm.iitdelhi@gmail.com" class="text-white hover:underline">
+                            acesacm.iitdelhi@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="flex px-5 gap-5">
+                        <a href="https://www.facebook.com/acesacm/" class="text-white hover:text-yellow-500">
+                            <i class="fa fa-facebook text-3xl"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/company/aces-acm-iit-delhi" class="text-white hover:text-yellow-500">
+                            <i class="fa fa-linkedin text-3xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/acesacm.iitdelhi/?hl=en" class="text-white hover:text-yellow-500">
+                            <i class="fa fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+        
+                    <!-- Map Section -->
+                    <div class="mt-6">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8373747774863!2d77.19020022463053!3d28.544607438069555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df643557f7f%3A0xbc1cbe5d8a211254!2sIIT%20Campus%2C%20Hauz%20Khas%2C%20New%20Delhi%2C%20Delhi%20110016!5e0!3m2!1sen!2sin!4v1690301858935!5m2!1sen!2sin" 
+                            loading="lazy" 
+                            class="w-full h-60 border-none rounded-md">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <footer class="bg-cyan-700 text-white text-center p-5">
+            <p>&copy; 2024 ACES-ACM. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
